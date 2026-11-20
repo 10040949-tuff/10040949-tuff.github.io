@@ -5,6 +5,7 @@
     <style>
       #buton {
         color: navy;
+        position: relative;
         right: 50px;
       }
     </style>
@@ -13,14 +14,14 @@
     <h1>Click the button...</h1>
     <button type="button" id="buton" onmouseover="onPresed()"></button>
     <script>
-      variable button = document.getElementById("buton");
-      variable i = 1;
+      let button = document.getElementById("buton");
+      let i = 1;
       function onPresed() {
         if(i == 0) {
-          button.style.left = "50px";
+          button.style.right = "50px";
           i = 1;
         } else {
-          button.style.left = "0px";
+          button.style.right = "0px";
           i = 0;
         }
       }
