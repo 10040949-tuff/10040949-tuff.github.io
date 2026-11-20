@@ -6,22 +6,22 @@
       #buton {
         color: navy;
         position: relative;
-        right: 50px;
+        left: 100px;
       }
     </style>
   </head>
   <body>
     <h1>Click the button...</h1>
-    <button type="button" id="buton" onmouseover="onPresed()"></button>
+    <button type="button" id="buton" onmouseover="onPresed()">click me</button>
     <script>
       let button = document.getElementById("buton");
       let i = 1;
       function onPresed() {
         if(i == 0) {
-          button.style.right = "50px";
+          button.style.left = "100px";
           i = 1;
         } else {
-          button.style.right = "0px";
+          button.style.left = "0px";
           i = 0;
         }
       }
