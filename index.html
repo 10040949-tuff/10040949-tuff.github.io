@@ -6,7 +6,7 @@
       #buton {
         color: navy;
         position: absolute;
-        left: 100px;
+        left: 0px;
       }
     </style>
   </head>
@@ -15,10 +15,10 @@
     <button type="button" id="buton" onmouseover="onPresed()">click me</button>
     <script>
       let button = document.getElementById("buton");
-      let i = 1;
+      let i = 0;
       function onPresed() {
         if(i == 0) {
-          button.style.left = "100px";
+          button.style.left = "500px";
           i = 1;
         } else {
           button.style.left = "0px";
